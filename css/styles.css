@@ -1,0 +1,250 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    line-height: 1.6;
+    color: #4A4A4A;  
+}
+
+img {
+    width: 100%;
+}
+h3{
+    font-size: 150%;
+}
+p{
+    font-size: 1.2em;
+}
+
+header {
+    background-color: #626F7E;
+}
+.contacts{
+    background-color: #fafafa;
+}
+footer{
+    background: #fafafa;
+}
+/* ---- Links ---- */
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color: green;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Nav and introduction ---- */
+
+h1{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 30px;
+    color: white;
+}
+
+nav{
+    text-align: center;
+}
+
+nav h3{
+    border: rgb(255, 255, 255, 0.3) solid 1px;
+    margin: 10px;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.intro{
+    padding: 0 10px 30px 10px;
+    color: white;
+    
+}
+header{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* ---- Main content ---- */
+
+body{
+    margin: 0 auto;
+    text-align: center;
+}
+.portfolio{
+    padding: 0 20px;
+}
+.profile-picture{
+    width: 65%;
+    margin: 15px 0;
+}
+.portfolio-heading{
+    padding-top: 30px;
+}
+.portfolio p{
+    padding: 0 15px 30px 15px;
+}
+.skills img{
+    margin: -30px 0;
+}
+.contacts{
+    margin-bottom: 0;
+    padding: 0 20px;
+}
+.contacts h3{
+    padding-top: 30px;
+}
+.contacts:last-child{
+    padding-bottom: 20px;
+}
+.contacts span{
+    font-weight: bold;
+}
+
+/* ---- Footer ---- */
+
+footer p{
+    display: inline-block;
+    font-weight: bold; 
+    padding: 20px;
+}
+.footer-student-name{
+    float: left;
+}
+.back-to-top{
+    float: right;
+}
+hr{
+    margin: 0 10px;
+    padding: 0 5px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media (max-width:767px){
+    .footer-home,
+    .footer-portfolio, 
+    .footer-skills,
+    .footer-contacts{
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    nav h3{
+        display: inline-block;
+        border: none;
+        background: none;
+        color: white;
+        margin-bottom: 40px;
+    }
+    
+    .intro p{
+        margin-top: 0;
+        text-align: left;
+
+    }
+
+    .profile-picture{
+        float: right;
+        margin-top: 0;
+        margin-left: 10px;
+        width: 40%;
+    }
+    .col {
+        width: 50%;
+        float: left;
+        padding: 0 10px;
+    }
+
+    .portfolio-heading{
+        padding: 20px 0;
+    }
+    
+    .back-to-top {
+        display: none;
+    }
+    .contacts p{
+        padding-left: 70px;
+        padding-right: 70px;
+        
+    }
+
+    footer{
+        font-size: 0.7em;
+    }
+
+    .footer-home,
+    .footer-portfolio, 
+    .footer-skills,
+    .footer-contacts {
+        float: right;
+    }
+    
+/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+@media(min-width:1024px) {
+
+    .nav-bar h1{
+        float: left;
+    }
+    .nav-bar nav{
+        float: right;
+    }
+    nav h3{
+        padding-top: 30px;
+    }
+    .nav-bar h1{
+        padding-left: 10px;
+    }
+    .intro{
+        padding-right: 20px;
+    }
+    .profile-picture{
+        margin-left: 30px;
+    }
+
+    body{
+        max-width: 1150px;
+    }
+    
+    .col{
+        width: 33%;
+        float: left;
+    }
+    .contacts p{
+        padding-left: 160px;
+        padding-right: 160px;
+        
+    }
+
+
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+}

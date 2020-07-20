@@ -118,6 +118,7 @@ body{
 footer p{
     display: inline-block;
     font-weight: bold; 
+    font-size: 0.8em;
     padding: 20px;
 }
 .footer-student-name{
@@ -125,24 +126,24 @@ footer p{
 }
 .back-to-top{
     float: right;
+    
 }
 hr{
     margin: 0 10px;
     padding: 0 5px;
+}
+.footer-home,
+.footer-portfolio, 
+.footer-skills,
+.footer-contacts{
+    display: none;
 }
 
 
 /* ================================= 
   Media Queries
 ==================================== */
-@media (max-width:767px){
-    .footer-home,
-    .footer-portfolio, 
-    .footer-skills,
-    .footer-contacts{
-        display: none;
-    }
-}
+
 @media (min-width: 768px) {
     nav h3{
         display: inline-block;
@@ -174,8 +175,9 @@ hr{
         padding: 20px 0;
     }
     
-    .back-to-top {
+    .back-to-top{
         display: none;
+        
     }
     .contacts p{
         padding-left: 70px;
@@ -184,7 +186,7 @@ hr{
     }
 
     footer{
-        font-size: 0.7em;
+        font-size: 1em;
     }
 
     .footer-home,
@@ -192,6 +194,7 @@ hr{
     .footer-skills,
     .footer-contacts {
         float: right;
+        display: block;
     }
     
 /* ---- Float clearfix ---- */
